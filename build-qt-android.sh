@@ -13,7 +13,6 @@ PROJECT_DIR="$(pwd)/qt-android-webview"
 TEMPLATES_DIR="$(pwd)/templates"
 echo "Creating WebView project in: $PROJECT_DIR"
 
-# ایجاد دایرکتوری پروژه و زیرپوشه‌ها
 mkdir -p "$PROJECT_DIR/android/res/mipmap-hdpi"
 mkdir -p "$PROJECT_DIR/android/res/mipmap-mdpi"
 mkdir -p "$PROJECT_DIR/android/res/mipmap-xhdpi"
@@ -21,7 +20,6 @@ mkdir -p "$PROJECT_DIR/android/res/mipmap-xxhdpi"
 mkdir -p "$PROJECT_DIR/android/res/mipmap-xxxhdpi"
 cd "$PROJECT_DIR" || exit 1
 
-# کپی کردن فایل app.png
 if [ -f "../app.png" ]; then
     cp "../app.png" "$PROJECT_DIR/android/res/mipmap-hdpi/ic_launcher.png"
     cp "../app.png" "$PROJECT_DIR/android/res/mipmap-mdpi/ic_launcher.png"
@@ -33,7 +31,6 @@ else
     echo "Warning: app.png not found in current directory. Default icon will be used."
 fi
 
-# کپی کردن فایل‌های قالب و جایگزینی متغیرها
 cp "$TEMPLATES_DIR/CMakeLists.txt" .
 sed "s|\$URL|$URL|g" "$TEMPLATES_DIR/main.cpp" > main.cpp
 cp "$TEMPLATES_DIR/main.qml" .
