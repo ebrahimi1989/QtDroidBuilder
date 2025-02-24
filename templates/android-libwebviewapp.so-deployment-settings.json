@@ -1,0 +1,13 @@
+{
+    "application-binary": "libwebviewapp.so",
+    "qt": "/opt/qt/6.3.2/android_arm64_v8a",
+    "sdk": "/opt/android-sdk",
+    "ndk": "/opt/android-sdk/ndk/25.1.8937393",
+    "toolchain-prefix": "llvm",
+    "tool-prefix": "clang",
+    "android-package-source-directory": "${CMAKE_CURRENT_SOURCE_DIR}/android",
+    "android-min-sdk-version": "23",
+    "android-target-sdk-version": "33",
+    "stdcpp-path": "/opt/android-sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux",
+    "qml-root-path": "${CMAKE_CURRENT_SOURCE_DIR}"
+}
