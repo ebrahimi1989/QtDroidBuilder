@@ -1,6 +1,9 @@
 # QtDroidBuilder
 
-![GitHub License](https://img.shields.io/github/license/ebrahimi1989/QtDroidBuilder)  ![GitHub Issues](https://img.shields.io/github/issues/ebrahimi1989/QtDroidBuilder)  ![GitHub Stars](https://img.shields.io/github/stars/ebrahimi1989/QtDroidBuilder?style=social) ![GitHub Workflow Status](https://github.com/ebrahimi1989/QtDroidBuilder/actions/workflows/build-apk.yml/badge.svg)
+![GitHub License](https://img.shields.io/github/license/ebrahimi1989/QtDroidBuilder)  
+![GitHub Issues](https://img.shields.io/github/issues/ebrahimi1989/QtDroidBuilder)  
+![GitHub Stars](https://img.shields.io/github/stars/ebrahimi1989/QtDroidBuilder?style=social) 
+![GitHub Workflow Status](https://github.com/ebrahimi1989/QtDroidBuilder/actions/workflows/build-apk.yml/badge.svg)
 
 A simple Bash script to build Qt/QML-based Android applications with WebView support, packaged as signed APKs using Docker. Create your own Android app with a custom URL and icon in just a few steps!
 
