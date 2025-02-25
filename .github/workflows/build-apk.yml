@@ -3,38 +3,26 @@ name: Build QtDroidBuilder APK
 on:
   push:
     branches:
-      - main  
+      - main
   pull_request:
     branches:
       - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Docker
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
-          sudo systemctl start docker
-          sudo usermod -aG docker $USER
-
-      - name: Copy custom icon (if exists)
-        run: |
-          if [ -f "app.png" ]; then
-            echo "Found app.png, copying..."
-          else
-            echo "No app.png found, proceeding without custom icon."
-          fi
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
 
       - name: Run QtDroidBuilder script
         run: |
           chmod +x build-qt-android.sh
-          ./build-qt-android.sh "https://www.aparat.com" "Aparatchi"
+          ./build-qt-android.sh "https://www.aparat.com" "Aparatchiii"
 
       - name: Upload APK artifacts
         uses: actions/upload-artifact@v4
