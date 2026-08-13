@@ -1,0 +1,28 @@
+# QtDroidBuilder — Android build output
+build/
+out/
+*.apk
+*.aab
+*.keystore
+*.jks
+*.keys
+
+# Gradle (if used)
+.gradle/
+buildSrc/
+
+# Kotlin/Java
+*.class
+*.jar
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# IDE
+.idea/
+.vscode/
